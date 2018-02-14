@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Valentine Card</title>
+		<title>Be my Valentine</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -19,6 +19,7 @@
 				justify-content: center; 
 				height: 100vh; 
 				align-items: flex-start;
+				padding-top: 45px;
 			}
 
 			.theater {
@@ -28,9 +29,17 @@
 			.stars {
 				animation: fade-in 1.5s infinite;
 				position: absolute; 
-				top: 0; 
+				top: 45px; 
 				left: 50%;
 				transform: translateX(-50%);
+			}
+
+			.frame {
+				position: absolute;
+				transform: rotate(90deg);
+				top: -124px;
+    			height: 989px;
+    			width: 720px;
 			}
 
 			@keyframes fade-in {
@@ -44,6 +53,8 @@
 	<body>
 		<img class="theater" src="./sidney-theater.png">
 		<img class="stars" src="./stars-light.png" >
+		<img src="./frame.png" class="frame">
+		<audio src="./be-my-valentine.mp3" autoplay></audio>
 	</body>
 
 </html>
